@@ -21,9 +21,9 @@ namespace Reaqtor.Remoting.Platform
             if (!File.Exists(executablePath))
             {
 #if DEBUG
-                executablePath = string.Format(CultureInfo.InvariantCulture, @"..\..\..\Reaqtor.Remoting.{0}\bin\Debug\Reaqtor.Remoting.{0}.exe", component);
+                executablePath = string.Format(CultureInfo.InvariantCulture, @"..\..\..\..\Reaqtor.Remoting.{0}\bin\Debug\net472\Reaqtor.Remoting.{0}.exe", component);
 #else
-                executablePath = string.Format(CultureInfo.InvariantCulture, @"..\..\..\Reaqtor.Remoting.{0}\bin\Release\Reaqtor.Remoting.{0}.exe", component);
+                executablePath = string.Format(CultureInfo.InvariantCulture, @"..\..\..\..\Reaqtor.Remoting.{0}\bin\Release\net472\Reaqtor.Remoting.{0}.exe", component);
 #endif
                 if (!File.Exists(executablePath))
                 {
